@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" 
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/text_view_label1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/down_payment"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/text_view_label2"
+        android:layout_centerInParent="true"
+        android:ellipsize="none"
+        android:maxEms="10"
+        android:maxLines="100"
+        android:maxWidth="5dp"
+        android:textAlignment="center"
+        android:textSize="15sp"
+        android:typeface="normal" 
+        android:text="@string/text_view_label1"/>
+ 
+   <EditText
+       android:id="@+id/down_payment"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignLeft="@+id/monthly_payment"
+       android:layout_alignParentRight="true"
+       android:layout_alignParentTop="true"
+       android:hint="@string/down_payment"
+       android:inputType="number" />
+   
+   <TextView
+       android:id="@+id/text_view_label2"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignBottom="@+id/monthly_payment"
+       android:layout_alignParentLeft="true"
+       android:layout_below="@+id/text_view_label1"
+       android:text="@string/text_view_label2" />
+ 
+   <EditText 
+       	android:id="@+id/monthly_payment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number" 
+        android:hint="@string/monthly_payment" 
+        android:layout_toRightOf="@+id/text_view_label2"
+        android:layout_below="@id/down_payment"/>
+   
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_view_label1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="72dp"
+        android:onClick="calMortgage"
+        android:text="@string/button_submit" />
+
+</RelativeLayout>
