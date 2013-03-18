@@ -6,9 +6,19 @@
     <string name="down_payment"></string>
     <string name="text_view_label2">How Much Monthly Payment Can you afford</string>
     <string name="monthly_payment"></string>
+    <string name="text_view_label3">Enter interest rate you think you can qualify for:</string>
+    <string name="interest_rate"></string>
+    <string name="text_view_label4">What is your desired loan term</string>
     <string name="button_submit">Submit</string>
     <string name="menu_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
-    <string name="title_activity_display_results">Monthly Payment is</string>
+    <string name="title_activity_display_results">You can afford a purchase price of</string>
+    <string-array name="years_array">
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>25</item>
+        <item>30</item>
+    	</string-array>
 
 </resources>
